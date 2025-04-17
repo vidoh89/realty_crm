@@ -1,11 +1,9 @@
 from shiny import App, ui, module
 from modules import lead_management
-
-app_ui = ui.page_fluid(
-    ui.h1("Real Estate Management Platform"),
+from modules.navbar import navbar
 
 
-)
+app_ui = navbar()
 
 def server(input, output, session):
     pass
